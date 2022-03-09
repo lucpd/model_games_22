@@ -16,7 +16,7 @@ public class camera_ray_simple : MonoBehaviour
         RaycastHit hit;
         
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit, 50f) && hit.rigidbody != null){
+        if (Physics.Raycast(ray, out hit, 30f) && hit.rigidbody != null){
             hit.rigidbody.AddForce(Vector3.up, ForceMode.Impulse);
         }
     }
