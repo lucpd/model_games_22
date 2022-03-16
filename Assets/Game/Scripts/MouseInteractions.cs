@@ -4,27 +4,21 @@ using UnityEngine;
 
 public class MouseInteractions : MonoBehaviour
 {
-
-    public Transform ballT;
-    
     void Start()
     {
-      
+
     }
 
-    void FixedUpdate()
+    void Update()
     {
-
         RaycastHit hit;
 
         var ray = GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 
         // If it hits but the object also has a rigidbody
-        if (Physics.Raycast(ray, out hit))
+        if (Physics.Raycast(ray, out hit) && hit.rigidbody != null)
         {
-            Vector3 dir = hit.point - ballT.position;
-            ballT.GetComponent<Rigidbody>().AddForce(dir * 5);
-            //hit.rigidbody.AddForce(new Vector3(1, 0 , 1), ForceMode.Impulse);
+            hit.rigidbody.AddForce(new Vector3(-20, 1, 20), ForceMode.Impulse);
         }
     }
 }
