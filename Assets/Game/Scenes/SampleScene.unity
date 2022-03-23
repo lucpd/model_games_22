@@ -5461,6 +5461,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5541,9 +5542,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 231e042b2952a604a929d466d89d5356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b1c573116a31b49a5c552db07bd03f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ballT: {fileID: 1522965900}
@@ -8989,8 +9002,6 @@ GameObject:
   - component: {fileID: 1522965898}
   - component: {fileID: 1522965897}
   - component: {fileID: 1522965896}
-  - component: {fileID: 1522965901}
-  - component: {fileID: 1522965902}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -9092,34 +9103,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1522965901
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522965895}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 231e042b2952a604a929d466d89d5356, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballT: {fileID: 0}
---- !u!114 &1522965902
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1522965895}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9aae6eb2f1811b04f9cc0ec4d8839e86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 0
-  jumpSpeed: 0
-  gravity: 0
 --- !u!1 &1535666177
 GameObject:
   m_ObjectHideFlags: 0
